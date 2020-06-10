@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\d1000.Common.Application\d1000.Common.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\d1000.Common.Infrastructure\d1000.Common.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

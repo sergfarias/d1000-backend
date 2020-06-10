@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Maps\Autenticacao\**" />
+    <EmbeddedResource Remove="Maps\Autenticacao\**" />
+    <None Remove="Maps\Autenticacao\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\d1000.Common.Application\d1000.Common.Application.csproj" />
+    <ProjectReference Include="..\..\Core\d1000.Common.Domain\d1000.Common.Domain.csproj" />
+    <ProjectReference Include="..\..\Shared.Infrastructure\Shared.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\Turmas\" />
+  </ItemGroup>
+
+</Project>

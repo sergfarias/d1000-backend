@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Shared.Domain\Shared.Domain.csproj" />
+    <ProjectReference Include="..\..\CrossCutting\Shared.Tools\Shared.Tools.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	<LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Exceptions\**" />
+    <EmbeddedResource Remove="Exceptions\**" />
+    <None Remove="Exceptions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\Application\Shared.Application\Shared.Application.csproj" />
+    <ProjectReference Include="..\..\Shared\Core\Shared.Domain\Shared.Domain.csproj" />
+    <ProjectReference Include="..\..\Shared\CrossCutting\Shared.Tools\Shared.Tools.csproj" />
+  </ItemGroup>
+
+</Project>

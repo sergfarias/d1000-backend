@@ -1,0 +1,1 @@
+Esta pasta contém os scripts para automatizar a publicação dos serviços no servidor de homologação (172.16.100.170).

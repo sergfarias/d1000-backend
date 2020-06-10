@@ -1,0 +1,1 @@
+dotnet msbuild .\d1000.Services.Clientes.API.csproj /p:DeployOnBuild=true /p:PublishProfile=".\Properties\PublishProfiles\CustomProfile.pubxml" /p:Password=Profarma2020@
